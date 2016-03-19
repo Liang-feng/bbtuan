@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+    <include layout="@layout/top_bar_btn">
+    </include>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10.0dip"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+
+                <TextView
+                    android:id="@+id/tv_editpwd_ml"
+                    style="@style/AccountText"
+                    android:text="初始密码" />
+
+                <ImageView
+                    android:id="@+id/iv_editpwd_sh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/password_dide" />
+
+                <EditText
+                    android:id="@+id/edit_editpwd_passed"
+                    style="@style/AccountEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_editpwd_ml"
+                    android:ems="10"
+                    android:hint="请输入原始密码"
+                    android:imeOptions="actionDone"
+                    android:maxLength="10"
+                    android:password="true"
+                    android:textColorHint="@color/gray_light">
+
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView style="@style/SeparatorLine" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10.0dip">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+
+                <TextView
+                    android:id="@+id/tv_editpwd_ml1"
+                    style="@style/AccountText"
+                    android:text="修改密码" />
+
+                <ImageView
+                    android:id="@+id/iv_editpwd_sh1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/password_dide" />
+
+                <EditText
+                    android:id="@+id/edit_editpwd_passed1"
+                    style="@style/AccountEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_editpwd_ml1"
+                    android:ems="10"
+                    android:hint="请输入修改的密码"
+                    android:imeOptions="actionDone"
+                    android:maxLength="10"
+                    android:password="true"
+                    android:textColorHint="@color/gray_light">
+
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView style="@style/SeparatorLine" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10.0dip">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip">
+
+                <TextView
+                    android:id="@+id/tv_editpwd_ml2"
+                    style="@style/AccountText"
+                    android:text="修改密码" />
+
+                <ImageView
+                    android:id="@+id/iv_editpwd_sh2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/password_dide" />
+
+                <EditText
+                    android:id="@+id/edit_editpwd_passed2"
+                    style="@style/AccountEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_editpwd_ml2"
+                    android:ems="10"
+                    android:hint="请再次输入修改的密码"
+                    android:imeOptions="actionDone"
+                    android:maxLength="10"
+                    android:password="true"
+                    android:textColorHint="@color/gray_light">
+
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_editpwd_put"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        style="@style/BigButton"
+        android:textColor="@color/white"
+        android:textSize="22.0sp"
+        android:background="@color/bg_main"
+        android:text="修改"  />
+</LinearLayout>

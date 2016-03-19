@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_color"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2dp" >
+
+    <boyue.bbtuan.view.RoundImageView
+        android:id="@+id/thitem_img_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_math_temp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/thitem_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="高等数学第六版上册辅导班"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上课教室: "
+                android:textColor="#818181"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/thitem_tv_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="东区9教214 "
+                android:textColor="#818181"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上课时间: "
+                android:textColor="#818181"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/thitem_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="星期三、六 19:00-21:30 "
+                android:textColor="#818181"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课时: "
+                android:textColor="#818181"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/thitem_tv_classt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="57节 "
+                android:textColor="#818181"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/thitem_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/thitem_tv_prive"
+                android:background="@drawable/home_list_text_style"
+                android:textColor="#01AEF2"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/thitem_tv_prive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="¥400"
+                android:textColor="#FA8000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

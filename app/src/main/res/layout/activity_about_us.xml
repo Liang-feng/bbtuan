@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+    android:background="@color/gray_bg">
+    <include android:id="@+id/app_info_title"
+        layout="@layout/top_bar_btn" />
+    <TextView
+        android:id="@+id/tv_aboutus"
+        android:textSize="16.0sp"
+              android:textColor="@color/black"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20.0dip"
+              android:layout_marginTop="20.0dip"
+              android:layout_marginRight="20.0dip"
+              android:text="@string/about_us"
+              android:layout_below="@+id/app_info_title"
+              android:lineSpacingExtra="6.0dip" />
+
+    <TextView
+        android:id="@+id/tv_Copyright"
+        style="@style/style_item_font_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25.0dip"
+        android:text="Copyright @2014-2015. All Rights Reserved."
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_infolicense"
+        style="@style/style_item_font_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_Copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6.0dip"
+        android:text="使用条款和隐私政策"
+        android:textColor="@color/bg_main" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_library_itemobj"
+        android:id="@+id/relativeLayout">
+        <TextView
+            android:id="@+id/tv_library_obj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高等数学A1"
+            android:padding="2dp"
+            android:background="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/ic_download"
+    android:layout_alignTop="@+id/relativeLayout"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="26dp"
+    android:layout_marginEnd="26dp"
+    android:id="@+id/iv_library_down" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://www.baidu.com/s?word=百度网盘tn=99421345_hao_pgie=utf-8ssl_sample=normal"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignRight="@+id/iv_library_down"
+        android:layout_alignEnd="@+id/iv_library_down"
+        android:id="@+id/tv_library_link" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123456人已下载"
+        android:layout_below="@+id/tv_library_link"
+        android:layout_alignLeft="@+id/tv_library_link"
+        android:layout_alignStart="@+id/tv_library_link"
+        android:id="@+id/tv_library_num" />
+    <View android:background="@color/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/tv_library_num"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

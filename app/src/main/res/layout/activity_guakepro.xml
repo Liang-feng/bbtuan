@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_bar_btn"></include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/style_item_font_14"
+            android:layout_margin="10dp"
+            android:text="@string/xieyineirong"
+            />
+    </ScrollView>
+</LinearLayout>

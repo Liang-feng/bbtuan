@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9" >
+    <include layout="@layout/top_bar_btn"
+        android:id="@+id/r1"/>
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/r1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:padding="8dp"
+        android:paddingLeft="6dp" >
+
+        <TextView
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高等数学"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/allRmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="¥510"
+            android:textColor="#FA8000"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:paddingLeft="6dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_alipay"
+            android:clickable="true"
+           android:background="@drawable/linearlayout_selector"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_alipay" />
+            <LinearLayout 
+                android:layout_width="0dp" 
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" 
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"           
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝"
+                    android:layout_marginBottom="4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支持支付宝用户使用"
+                    android:textColor="#88000000"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_jifenright"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F9F9F9"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_weixin"
+            android:clickable="true"
+             android:background="@drawable/linearlayout_selector"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_weixin" />
+            <LinearLayout 
+                android:layout_width="0dp" 
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" 
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"           
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信支付"
+                    android:layout_marginBottom="4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支持微信用户使用"
+                    android:textColor="#88000000"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_jifenright"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F9F9F9"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_unionpay"
+            android:clickable="true"
+             android:background="@drawable/linearlayout_selector"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_unionpay" />
+            <LinearLayout 
+                android:layout_width="0dp" 
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" 
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"           
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中国银联"
+                    android:layout_marginBottom="4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支持中国银联银行客户使用"
+                    android:textColor="#88000000"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_jifenright"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F9F9F9"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_dangmianfu"
+            android:clickable="true"
+             android:background="@drawable/linearlayout_selector"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_dangmianpay" />
+            <LinearLayout 
+                android:layout_width="0dp" 
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" 
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"           
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当面付"
+                    android:layout_marginBottom="4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支持当面付款"
+                    android:textColor="#88000000"
+                    />
+            </LinearLayout>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_jifenright"/>
+        </LinearLayout>
+         
+        <View android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F9F9F9"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="48dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

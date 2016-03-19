@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_bar">
+    <include layout="@layout/top_bar_btn"
+            android:id="@+id/title_layout"/>
+    <ScrollView android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/title_layout"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:overScrollMode="never">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout android:id="@+id/personal_info_layout"
+                            android:paddingLeft="@dimen/general_edge_horizontal_margin"
+                            android:paddingRight="@dimen/general_edge_horizontal_margin"
+                            android:layout_width="fill_parent"
+                            android:layout_height="132.0dip">
+                <boyue.bbtuan.view.RoundImageView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/img_tecinfo_head"
+                    android:layout_width="100.0dip"
+                    android:layout_height="100.0dip"
+                    android:src="@mipmap/ic_ceshi_head"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="头像" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@+id/name_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/teacher_list_content_margin"
+                    android:layout_marginBottom="13.0dip"
+                    android:layout_toRightOf="@id/img_tecinfo_head"
+                    android:layout_above="@+id/tv_tecinfo_subject">
+                    <TextView
+                        style="@style/style_item_font_17"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tv_tecinfo_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="陈志良"
+                        android:singleLine="true" />
+                </LinearLayout>
+                <TextView
+                    android:textSize="@dimen/general_text_size_middle"
+                    android:textColor="@color/gray_bar_text"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_tecinfo_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高等数学A1"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/btn_tecinfo_status"
+                    android:layout_alignLeft="@id/name_layout"
+                    android:layout_centerVertical="true" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/btn_tecinfo_status"
+                    android:layout_below="@id/tv_tecinfo_subject"
+                    android:layout_alignLeft="@id/name_layout"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="13.0dip"
+                    >
+                <TextView
+                    android:textSize="@dimen/general_text_size_middle"
+                    android:textColor="@color/gray_bar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名人数:"
+                    android:singleLine="true"
+                   />
+
+                    <TextView
+                        android:id="@+id/tv_tecinfo_currentnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="@color/gray_bar_text"/>
+                    <TextView
+                        android:id="@+id/tv_tecinfo_totalnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="@color/green"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_tecinfo_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_teacher_status_selecter"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView
+                android:textSize="@dimen/general_text_size_middle"
+                android:textColor="@color/gray_bar_text"
+                android:gravity="center_vertical"
+                android:id="@+id/tutor_record_title"
+                android:background="@color/gray_bg"
+                android:paddingLeft="@dimen/general_edge_horizontal_margin"
+                android:paddingRight="@dimen/general_edge_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:text="授课形式"
+                android:singleLine="true"
+                android:layout_below="@id/personal_info_layout" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:id="@+id/tutor_record_layout"
+                android:paddingLeft="@dimen/general_edge_horizontal_margin"
+                android:paddingTop="@dimen/general_content_left_margin_small"
+                android:paddingRight="@dimen/general_edge_horizontal_margin"
+                android:paddingBottom="@dimen/general_edge_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tutor_record_title">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="授课形式:"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/gray_bar_text"
+                    style="@style/style_item_font_14" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_tecinfo_type"
+                        android:text="一对多"
+                        android:layout_margin="3dp"
+                        android:textColor="@color/black"
+                        style="@style/style_item_font_14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="授课课时:"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/gray_bar_text"
+                    style="@style/style_item_font_14" />
+                <TextView
+                    android:id="@+id/tv_tecinfo_totaltime"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="7课时"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    style="@style/style_item_font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="授课时间:"
+                    android:singleLine="false"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/gray_bar_text"
+                    style="@style/style_item_font_14"  />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_tecinfo_time"
+                    android:text="星期四晚上7:00-9:00"
+                    android:singleLine="false"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    style="@style/style_item_font_14"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:text="授课学院:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/gray_bar_text"
+                    style="@style/style_item_font_14" />
+                <TextView
+                    android:id="@+id/tv_tecinfo_stucollege"
+                    android:text="电子工程与自动化学院"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    style="@style/style_item_font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:text="授课单价:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/gray_bar_text"
+                    style="@style/style_item_font_14" />
+                <TextView
+                    android:id="@+id/tv_tecinfo_price"
+                    android:text="99元"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    style="@style/style_item_font_14" />
+            </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:textSize="@dimen/general_text_size_middle"
+                android:textColor="@color/gray_bar_text"
+                android:gravity="center_vertical"
+                android:id="@+id/tutor_experience_title"
+                android:background="@color/gray_bg"
+                android:paddingLeft="@dimen/general_edge_horizontal_margin"
+                android:paddingRight="@dimen/general_edge_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:text="老师简介"
+                android:singleLine="true"
+                android:layout_below="@id/tutor_record_layout" />
+            <LinearLayout android:gravity="center_vertical"
+                          android:orientation="vertical"
+                          android:id="@+id/tutor_experience_layout"
+                          android:paddingLeft="@dimen/general_edge_horizontal_margin"
+                          android:paddingTop="@dimen/general_content_left_margin_small"
+                          android:paddingRight="@dimen/general_edge_horizontal_margin"
+                          android:paddingBottom="@dimen/general_edge_horizontal_margin"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@id/tutor_experience_title">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                          android:text="老师学历(年级):"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/gray_bar_text"
+                          style="@style/style_item_font_14" />
+                <TextView android:id="@+id/tv_tecinfo_grade"
+                          android:text="研二"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/black"
+                          style="@style/style_item_font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/gray_bar_text"
+                          android:text="老师所在学院:"
+                          style="@style/style_item_font_14" />
+                <TextView android:id="@+id/tv_tecinfo_college"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/black"
+                          android:text="电子工程与自动化学院"
+                          style="@style/style_item_font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                          android:text="联系方式:"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/gray_bar_text"
+                          style="@style/style_item_font_14" />
+                <TextView android:id="@+id/tv_tecinfo_phone"
+                          android:text="15078332282"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/black"
+                          style="@style/style_item_font_14" />
+            </LinearLayout>
+                <TextView
+                          android:text="老师个人介绍:"
+                          android:singleLine="false"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/gray_bar_text"
+                          style="@style/style_item_font_14" />
+                <TextView android:id="@+id/tv_tecinfo_feature"
+                          android:text="在教学中注重基础知识的把握与梳理。能根据学生的特点有针对性的辅导。在我的辅导下学生都能得到充分的发展。你会，不自觉的喜欢我的课。希望我们一起提高，共同发展。同学们，你们的成功离不开老师的帮助，我们的快乐离不开学生的好评。"
+                          android:autoText="true"
+                          android:maxLines="20"
+                          android:singleLine="false"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/black"
+                          style="@style/style_item_font_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/tutor_experience_layout">
+                <Button
+                    android:id="@+id/btn_tecinfog_put"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    style="@style/BigButton"
+                    android:textColor="@color/white"
+                    android:textSize="22.0sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_shape_put"
+                    android:text="团队报名" />
+                <Button
+                    android:id="@+id/btn_tecinfop_put"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    style="@style/BigButton"
+                    android:textColor="@color/white"
+                    android:textSize="22.0sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_shape_put"
+                    android:text="个人报名" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

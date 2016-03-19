@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="info_item_padding_bottom">11.0dip</dimen>
+    <dimen name="info_item_padding_leftright">12.0dip</dimen>
+    <dimen name="info_item_padding_top">10.0dip</dimen>
+    <dimen name="contact_activity_header_padding_top">28.0dip</dimen>
+    <dimen name="teacher_list_content_margin">12.0dip</dimen>
+    <dimen name="general_text_size_middle">15.0sp</dimen>
+    <dimen name="general_edge_horizontal_margin">16.0dip</dimen>
+    <dimen name="general_content_left_margin_small">8.0dip</dimen>
+</resources>

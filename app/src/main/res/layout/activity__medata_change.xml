@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+    <include layout="@layout/top_bar_btn"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_bg"
+        >
+        <EditText
+            android:id="@+id/edit_medatachange_input"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:maxLength="250"
+            android:gravity="left"
+            android:textAppearance="@style/style_item_font_14"
+            android:textColorHint="@color/gray_light"
+            android:inputType="textMultiLine"
+            android:hint="请输入你的昵称"
+            android:minHeight="150.0dip"
+            android:padding="5dp"
+            android:background="@color/white"/>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+                <TextView
+                    android:id="@+id/tv_medatachange_num"
+                    android:layout_width="100.0dip"
+                    android:layout_height="20.0dip"
+                    android:background= "@color/transparent"
+                    android:text="29"
+                    android:gravity="center"
+                    android:textAppearance="@style/style_item_font_14"
+                    android:textColor="@color/cltxt_title_color"
+                    android:layout_margin="5dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

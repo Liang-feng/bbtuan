@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="8dp"
+    android:background="#fff"
+    android:orientation="vertical" >
+	
+    <TextView
+        android:id="@+id/tv_pay_tips"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dangmianfudizhi"
+        android:textColor="#88000000"
+        android:textSize="13sp" />
+	
+        <Button
+            android:id="@+id/btn_pay_ok"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_round_yellow_corner"
+            android:text="知道啦"
+            android:textColor="#fff" />
+</LinearLayout>

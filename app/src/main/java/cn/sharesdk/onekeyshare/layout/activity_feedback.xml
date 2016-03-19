@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/gray_bg">
+        <include layout="@layout/top_bar_btn" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="20.0dip"
+        android:paddingRight="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+                      android:orientation="vertical"
+                      android:id="@+id/account_layout"
+                      android:background="@drawable/login_bg"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="@color/gray_light"
+                          android:gravity="top"
+                          android:id="@+id/edit_feedback_opinion"
+                          android:background="@null"
+                          android:paddingLeft="15.0dip"
+                          android:paddingTop="15.0dip"
+                          android:paddingRight="10.0dip"
+                          android:paddingBottom="15.0dip"
+                          android:scrollbars="vertical"
+                          android:layout_height="120.0dip"
+                          android:hint="@string/opinion_hint"
+                          android:singleLine="false"
+                          android:maxLength="300"
+                          android:inputType="textMultiLine"
+                          android:imeOptions="actionNext"
+                          style="@style/ReleaseEdit" />
+            </LinearLayout>
+            <TextView style="@style/SeparatorLine" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <EditText android:textColorHint="@color/gray_light"
+                          android:id="@+id/edit_feedback_link"
+                          android:paddingLeft="15.0dip"
+                          android:paddingRight="10.0dip"
+                          android:layout_width="fill_parent"
+                          android:hint="@string/link_hint"
+                          android:maxLength="30"
+                          android:inputType="text"
+                          android:imeOptions="actionDone"
+                          style="@style/ReleaseEdit" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@+id/btn_feedback_submit"
+                android:text="提交"
+                style="@style/BigButton"
+                android:textColor="@color/white"
+            android:background="@color/bg_main"/>
+    </LinearLayout>
+</LinearLayout>

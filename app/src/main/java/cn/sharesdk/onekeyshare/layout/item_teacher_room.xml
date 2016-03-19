@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/lay_item"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="104.0dip">
+        <boyue.bbtuan.view.RoundImageView
+            android:id="@+id/thitem_img_teacher"
+            android:layout_width="77.0dip"
+            android:layout_height="90.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:src="@mipmap/ic_ceshi_head"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true" />
+        <RelativeLayout
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_toRightOf="@id/thitem_img_teacher"
+            android:layout_alignTop="@id/thitem_img_teacher"
+            android:layout_alignBottom="@id/thitem_img_teacher">
+            <TextView
+                android:textSize="16.0dip"
+                android:textColor="@color/cltxt_title_color"
+                android:id="@+id/thitem_tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高等数学A1" />
+            <TextView
+                android:textSize="14.0dip"
+                android:textColor="@color/gray_light"
+                android:id="@+id/thitem_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:text="陈志良"
+                android:layout_below="@id/thitem_tv_subject" />
+            <ImageView android:layout_gravity="center_vertical"
+                       android:id="@+id/thitemth_img_star"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/img_star_four"
+                       android:layout_alignBottom="@id/thitem_tv_subject"
+                       android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0dip"
+                      android:textColor="@color/gray_light"
+                      android:id="@+id/thitem_tv_price"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="价格："
+                      android:layout_below="@+id/thitem_tv_college"
+                      android:layout_alignLeft="@+id/thitem_tv_college"
+                      android:layout_alignStart="@+id/thitem_tv_college"/>
+            <TextView android:textSize="12.0dip"
+                      android:textColor="@color/gray_light"
+                      android:id="@+id/thitem_tv_college"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="辅导学院:"
+                      android:layout_below="@+id/thitem_tv_name"
+                      android:layout_alignParentLeft="true"
+                      android:layout_alignParentStart="true"/>
+            <TextView android:textSize="12.0dip"
+                      android:textColor="@color/gray_light"
+                      android:id="@+id/thitem_tv_college_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10.0dip"
+                      android:text="电子工程与自动化"
+                      android:layout_toRightOf="@id/thitem_tv_college"
+                      android:layout_alignTop="@id/thitem_tv_college" />
+            <TextView android:textSize="12.0dip"
+                      android:textColor="@color/gray_light"
+                      android:id="@+id/thitem_tv_price_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10.0dip"
+                      android:text="80~200"
+                      android:layout_toRightOf="@id/thitem_tv_price"
+                      android:layout_alignTop="@id/thitem_tv_price" />
+            <TextView android:textSize="12.0dip"
+                      android:textColor="@color/gray_light"
+                      android:id="@+id/thitem_tv_phone"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="2dp"
+                      android:text="联系方式:"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignParentLeft="true"
+                      android:layout_alignParentStart="true"/>
+            <TextView android:textSize="12.0dip"
+                      android:textColor="@color/gray_light"
+                      android:id="@+id/thitem_tv_phone_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="1300000000"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignLeft="@+id/thitem_tv_college_name"
+                      android:layout_alignStart="@+id/thitem_tv_college_name"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

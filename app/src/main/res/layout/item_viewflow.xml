@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- 广告位 -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+        <boyue.bbtuan.tabmain.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="3dp" >
+
+            <boyue.bbtuan.tabmain.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dp"
+                app:activeColor="#ff0000"
+                app:activeType="fill"
+                app:circleSeparation="20dp"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                app:radius="4dp" />
+        </FrameLayout>
+    </FrameLayout>

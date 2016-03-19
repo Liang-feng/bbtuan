@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <include
+        layout="@layout/top_bar_btn" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView style="@style/SeparatorLine" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ReleaseText"
+                    android:text="手   机  号" />
+
+                <EditText
+                    android:id="@+id/edit_phone_account"
+                    style="@style/ReleaseEdit"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textColorHint="@color/gray_light" />
+            </LinearLayout>
+
+            <TextView style="@style/SeparatorLine" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/ReleaseText"
+                    android:text="验   证  码" />
+
+                <EditText
+                    android:id="@+id/edit_phone_num"
+                    style="@style/ReleaseEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1.00"
+                    android:hint="请输入验证码"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textColorHint="@color/gray_light" />
+
+                <boyue.bbtuan.view.SendValidateButton
+                    android:id="@+id/btn_phone_get"
+                    android:layout_width="100.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_btn_shape_put"
+                    android:text="点击获取" />
+            </LinearLayout>
+
+            <TextView style="@style/SeparatorLine" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_phone_num"
+            style="@style/BigButton"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn_shape_put"
+            android:text="开始验证" />
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_marginTop="39dp"
+          android:background="@color/clbg_diliver_color"
+          android:layout_width="fill_parent"
+          android:layout_height="1.0px"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/relLay_phone_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:visibility="gone"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="11.0dip"
+            android:layout_marginRight="23.0dip"
+            android:textSize="25sp"
+            android:text="密码:"
+            android:id="@+id/textView3"/>
+        <TextView
+                  android:textColor="#ff222222"
+                  android:textColorHint="#ffcdcdcd"
+                  android:id="@+id/tv_phone_pwd"
+                  android:background="@android:color/transparent"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:singleLine="true"
+                  android:text=""
+                  android:gravity="center|left"
+                  android:textSize="25sp"
+
+                  android:layout_toRightOf="@+id/textView3"
+                  android:layout_toEndOf="@+id/textView3"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/line2"
+    android:background="@color/clbg_diliver_color"
+    android:layout_width="fill_parent"
+    android:layout_height="1.0px"
+        android:visibility="gone"/>
+</LinearLayout>

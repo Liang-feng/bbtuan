@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+    <ScrollView
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:overScrollMode="never"
+                android:background="@color/gray_bg">
+        <RelativeLayout android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical"
+                          android:background="@color/white"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:layout_below="@id/lay_top">
+                <RelativeLayout
+                    android:id="@+id/relLay_set_feed"
+                    android:clickable="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/personal_rl">
+                    <ImageView
+                        android:id="@+id/img_mother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_personal_feedback"
+                        android:layout_alignParentLeft="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="意见反馈"
+                        android:layout_toRightOf="@id/img_mother"
+                        android:layout_centerVertical="true"
+                        style="@style/personal_txt"
+                        android:id="@+id/textView2" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/personal_arrow" />
+
+                </RelativeLayout>
+                <View android:background="@color/view"
+                      android:layout_width="fill_parent"
+                      android:layout_height="0.5dip"
+                      android:layout_marginLeft="74.0dip"
+                      android:layout_marginTop="13.5dip" />
+                <RelativeLayout android:id="@+id/relLay_set_update"
+                                android:clickable="true"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/personal_rl">
+                    <ImageView
+                        android:id="@id/img_mother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_personal_update"
+                        android:layout_alignParentLeft="true" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="软件更新"
+                              android:layout_toRightOf="@id/img_mother"
+                              android:layout_centerVertical="true"
+                              style="@style/personal_txt"
+                              android:id="@+id/textView" />
+                    <ImageView
+                        android:id="@+id/iv_new_update_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@mipmap/ic_new_update"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               style="@style/personal_arrow"
+                              />
+                </RelativeLayout>
+                <View android:background="@color/view"
+                      android:layout_width="fill_parent"
+                      android:layout_height="10.0dip"
+                      android:layout_marginTop="13.5dip" />
+                <RelativeLayout android:id="@+id/relLay_set_appcode"
+                                android:clickable="true"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/personal_rl">
+                    <ImageView android:id="@+id/img_event"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@mipmap/ic_personal_code"
+                               android:layout_alignParentLeft="true" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="应用二维码"
+                              android:layout_toRightOf="@id/img_event"
+                              android:layout_centerVertical="true"
+                              style="@style/personal_txt" />
+                    <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               style="@style/personal_arrow" />
+                </RelativeLayout>
+                <View android:background="@color/view"
+                      android:layout_width="fill_parent"
+                      android:layout_height="0.5dip"
+                      android:layout_marginLeft="74.0dip"
+                      android:layout_marginTop="13.5dip" />
+                <RelativeLayout
+                    android:id="@+id/relLay_set_appinfo"
+                    android:clickable="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/personal_rl">
+                    <ImageView android:id="@+id/img_note"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@mipmap/ic_personal_appinfo"
+                               android:layout_alignParentLeft="true" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="关于软件信息"
+                              android:layout_toRightOf="@id/img_note"
+                              android:layout_centerVertical="true"
+                              style="@style/personal_txt" />
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               style="@style/personal_arrow" />
+                </RelativeLayout>
+                <View android:background="@color/view"
+                      android:layout_width="fill_parent"
+                      android:layout_height="10.0dip"
+                      android:layout_marginTop="13.5dip" />
+                <RelativeLayout android:id="@+id/relLay_set_share"
+                                android:clickable="true"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/personal_rl">
+                    <ImageView
+                        android:id="@+id/img_share"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@mipmap/ic_personal_share"
+                               android:layout_alignParentLeft="true" />
+                    <TextView android:id="@+id/tv_share"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="我要分享"
+                              android:layout_toRightOf="@id/img_share"
+                              android:layout_centerVertical="true"
+                              style="@style/personal_txt" />
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               style="@style/personal_arrow" />
+                </RelativeLayout>
+                <View android:background="@color/view"
+                      android:layout_width="fill_parent"
+                      android:layout_height="0.5dip"
+                      android:layout_marginLeft="74.0dip"
+                      android:layout_marginTop="13.5dip" />
+                <RelativeLayout android:id="@+id/relLay_set_common"
+                                android:clickable="true"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/personal_rl">
+                    <ImageView
+                        android:id="@+id/img_common"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_personal_common"
+                        android:layout_alignParentLeft="true" />
+                    <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="通用设置"
+                              android:layout_toRightOf="@id/img_common"
+                              android:layout_centerVertical="true"
+                              style="@style/personal_txt" />
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               style="@style/personal_arrow" />
+                </RelativeLayout>
+                <View android:background="@color/view"
+                      android:layout_width="fill_parent"
+                      android:layout_height="1.0dip"
+                      android:layout_marginTop="20dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

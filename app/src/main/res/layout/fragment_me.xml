@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="@color/gray_bg">
+    <TextView style="@style/SeparatorLine" />
+    <RelativeLayout
+        android:id="@+id/lay_top"
+        android:background="@mipmap/ic_my_head_img"
+        android:paddingBottom="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp">
+        <RelativeLayout
+            android:id="@+id/lay_head"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <boyue.bbtuan.view.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/img_personal_head"
+                android:layout_width="80.0dp"
+                android:layout_height="80.0dp"
+                android:src="@mipmap/ic_ceshi_head"
+                android:layout_centerInParent="true" />
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/ic_edit_profile_pic"
+                android:layout_alignBottom="@+id/img_personal_head"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lay_head"
+            android:layout_alignLeft="@+id/lay_head"
+            android:layout_marginTop="12.0dip"
+            android:layout_alignStart="@+id/lay_head">
+        <TextView android:textSize="20.0sp"
+                  android:textColor="@color/white"
+                  android:id="@+id/tv_personal_user"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="风吹"/>
+<LinearLayout
+    android:id="@+id/linLay_personal_sex"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/ic_personalinfo_female"
+    >
+    <TextView
+        android:id="@+id/tv_personal_age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="18"
+        android:layout_gravity="center|right"
+        android:layout_marginLeft="13dp"
+        android:textSize="16.0sp"
+        />
+</LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical"
+                  android:background="@color/white"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/relLay_person_own"
+                    android:clickable="true"
+                    android:background="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/personal_rl">
+        <ImageView android:id="@+id/img_person_own"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@mipmap/ic_personal_myper"
+                   android:layout_alignParentLeft="true" />
+        <TextView android:id="@+id/tv_share"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="个人中心"
+                  android:layout_toRightOf="@id/img_person_own"
+                  android:layout_centerVertical="true"
+                  style="@style/personal_txt" />
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   style="@style/personal_arrow" />
+    </RelativeLayout>
+        <View android:background="@color/view"
+              android:layout_width="fill_parent"
+              android:layout_height="0.5dip"
+              android:layout_marginLeft="74.0dip"
+              android:layout_marginTop="13.5dip" />
+        <RelativeLayout
+            android:id="@+id/relLay_person_goods"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/personal_rl">
+            <ImageView android:id="@+id/img_goods"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/ic_event_goods"
+                       android:layout_alignParentLeft="true" />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我的订单"
+                      android:layout_toRightOf="@id/img_goods"
+                      android:layout_centerVertical="true"
+                      style="@style/personal_txt" />
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       style="@style/personal_arrow" />
+        </RelativeLayout>
+        <View android:background="@color/view"
+              android:layout_width="fill_parent"
+              android:layout_height="10.0dip"
+              android:layout_marginTop="13.5dip" />
+        <RelativeLayout android:id="@+id/relLay_person_collect"
+                        android:clickable="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/personal_rl">
+            <ImageView android:id="@+id/img_event"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/ic_me_collect"
+                       android:layout_alignParentLeft="true" />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我的收藏"
+                      android:layout_toRightOf="@id/img_event"
+                      android:layout_centerVertical="true"
+                      style="@style/personal_txt" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/personal_arrow" />
+        </RelativeLayout>
+        <View android:background="@color/view"
+              android:layout_width="fill_parent"
+              android:layout_height="0.5dip"
+              android:layout_marginLeft="74.0dip"
+              android:layout_marginTop="13.5dip" />
+        <RelativeLayout android:id="@+id/relLay_person_message"
+                        android:clickable="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/personal_rl">
+            <ImageView android:id="@+id/img_me_message"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/ic_me_message"
+                       android:layout_alignParentLeft="true" />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我的消息"
+                      android:layout_toRightOf="@id/img_me_message"
+                      android:layout_centerVertical="true"
+                      style="@style/personal_txt" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/personal_arrow" />
+        </RelativeLayout>
+        <View android:background="@color/view"
+              android:layout_width="fill_parent"
+              android:layout_height="0.5dip"
+              android:layout_marginLeft="74.0dip"
+              android:layout_marginTop="13.5dip" />
+    </LinearLayout>
+</LinearLayout>
